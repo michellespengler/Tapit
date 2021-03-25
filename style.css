@@ -1,0 +1,208 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* ----------------INDEX-------------------- */
+
+.content_index {
+    position: relative;
+    width: 100%;
+}
+.fondo img {
+    width: 100%;
+    height: auto;
+}
+
+.button_openAPP {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-220%, -230%); /* warum geht es nur mit tranform und nicht einfach mit top und left?*/
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 60%;
+    margin-left: 50%;
+    /*border: 3px black solid; */
+}
+/* ----------------START--------------------*/
+
+.content_start {
+    position: relative;
+    width: 100%;
+}
+
+.App_start  {
+    width: 100%;
+    height: auto;
+}
+
+.button_tapit {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-100%, -100%); /* warum geht es nur mit tranform und nicht einfach mit top und left?*/
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    width: 220px;
+    height: 80px;
+    margin-bottom: 60%;
+    margin-left: 50%;
+    /*border: 3px black solid ;*/
+}
+/* ----------------WELCOME--------------------*/
+
+.button_next {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    padding-top: 15%;
+    padding-left: -0%;
+}
+/* .img_next {
+    width: 80%;
+    align-items: center;
+    height: auto;
+} */
+
+.link_next_welcome {
+    align-items: center;
+    background-color: transparent;
+}
+
+h1 {
+    position: relative;
+    margin-top: 30px;
+    font-family: Fredoka One, sans-serif;
+    font-size: 48px;
+    text-shadow: -3px 0 black, 0 5px black, 3px 0 black, 0 -3px black;
+    text-align: center;
+    color: white;
+} 
+
+h2 {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #2F74AF;
+} 
+
+p {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Fredoka One, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+} 
+
+.two_players {
+    width: 50%;
+}
+
+.five_players {
+    width: 50%;
+}
+
+/* ----------------INSTRUCTIONS--------------------*/
+
+.multicolortext {
+    color: #469B76;
+  }
+
+  h3 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #2F74AF;
+} 
+
+.link_next_instructions {
+    align-items: center;
+    background-color: transparent;
+    /* border: 3px black solid;   */
+}
+
+.gif_instructions {
+    float: inline-start;
+    width: 90%;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+
+/* ----------------CONNECT--------------------*/
+
+.gif_connect {
+    float: inline-start;
+    width: 180%;
+    margin-top: -15%;
+    margin-left: -40%;
+}
+
+.link_next_connect {
+    position: absolute;
+    align-items: center;
+    background-color: transparent;
+    border: 3px black solid;  
+}
+
+/* ----------------QR code--------------------*/
+
+.img_QRcode {
+    position: absolute;
+    margin-bottom: 30%;
+}
+
+/* RESPONSIVE, solo cambio aqui adentro lo unico que quiero que sea diferente del div. Lo demas repetido lo puedo borrar*/
+/*Mobile Iphone X*/
+@media screen and (max-width: 375px){
+    .scale {
+    transform: scale(0.1); 
+    transform-origin: top left;
+    }
+    }
+
+    /*Tablet Ipad*/
+@media screen and (min-width: 768px){
+    .scale {
+        transform: scale(1.1);
+        transform-origin: top left;
+    }
+    }
+
+/*laptop*/
+@media screen and (min-width: 1024px){
+.scale {
+    transform: scale(1.2);
+    transform-origin: top left;
+}
+}
