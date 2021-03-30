@@ -75,7 +75,7 @@ time, mark, audio, video {
     width: 80%;
     height: auto;
     padding-top: 15%;
-    padding-left: -0%;
+    padding-left: 10%;
 }
 /* .img_next {
     width: 80%;
@@ -122,10 +122,12 @@ p {
 
 .two_players {
     width: 50%;
+    margin-left: 25%;
 }
 
 .five_players {
-    width: 50%;
+    width: 65%;
+    margin-left: 18%;
 }
 
 /* ----------------INSTRUCTIONS--------------------*/
@@ -169,21 +171,27 @@ p {
 }
 
 .link_next_connect {
-    position: absolute;
     align-items: center;
     background-color: transparent;
-    border: 3px black solid;  
+    /* border: 3px black solid;   */
 }
 
 /* ----------------QR code--------------------*/
 
 .img_QRcode {
-    position: absolute;
-    margin-bottom: 30%;
+    position: relative;
+    margin-bottom: 20%;
+}
+
+.link_next_connect {
+    align-items: center;
+    background-color: transparent;
+    /* border: 3px black solid;   */
 }
 
 /* RESPONSIVE, solo cambio aqui adentro lo unico que quiero que sea diferente del div. Lo demas repetido lo puedo borrar*/
 /*Mobile Iphone X*/
+
 @media screen and (max-width: 375px){
     .scale {
     transform: scale(0.1); 
